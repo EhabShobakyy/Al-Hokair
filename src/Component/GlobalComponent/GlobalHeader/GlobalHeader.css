@@ -1,0 +1,10 @@
+.header-layout {
+    /* background-image: url('../../../Assets/overviewHeader.png') ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-size: cover; */
+    color: var(--white-color);
+    height: 240px;
+    background-color: #0068b3;
+}

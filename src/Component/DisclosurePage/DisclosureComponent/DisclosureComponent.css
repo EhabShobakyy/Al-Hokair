@@ -1,0 +1,64 @@
+.disclosure-page {
+    background-color: #dddddd54;
+}
+.tabsList {
+    background-color: #fff;
+    box-sizing: border-box;
+    color: #707070;
+    font-weight: 600;
+    margin: 0!important;
+    cursor: pointer;
+    text-align: center;
+}
+.tabsList {
+    background-color: #fff;
+    border: 1px solid #ffe738;
+    border-radius: 7px;
+    box-sizing: border-box;
+    list-style: none;
+    margin-bottom: 50px!important;
+    margin-left: 0!important;
+    width: 75%!important;
+    display: flex;
+    justify-content: space-around;
+}
+.main-tabs .react-tabs__tab--selected{
+    border: none!important;
+    background-color: #ffe738!important;
+    box-sizing: border-box;
+    color: #333;
+    font-weight: 700;
+    margin: 0;
+    padding: 10px!important;
+    text-align: center
+}
+
+.active-tab {
+    background-color: #ffe738;
+}
+.popup-icon {
+    width: fit-content;
+    cursor: pointer;
+    background-color: unset !important;
+    color: black !important;
+    box-shadow: unset !important;
+}
+.accordion-button {
+    width: fit-content !important;
+}
+.disclosures-content .accordion-button:not(.collapsed)::after {
+    display: none;
+}
+.disclosures-content .accordion-button::after {
+    display: none;
+}
+.accordion-body {
+    padding: 0px !important;
+}
+
+.disclouser-img {
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+

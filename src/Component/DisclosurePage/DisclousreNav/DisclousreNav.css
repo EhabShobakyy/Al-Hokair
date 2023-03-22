@@ -1,0 +1,15 @@
+.component-nav {
+    background-color: #0068b3;
+}
+
+.component-nav a {
+    color: white;
+    text-decoration: unset;
+}
+.component-nav a.active {
+    text-decoration: underline;
+    font-weight: 600;
+}
+.component-nav a:hover {
+    color: white;
+}

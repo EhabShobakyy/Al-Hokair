@@ -1,0 +1,38 @@
+.pagination {
+    justify-content: center;
+    margin-top: 40px;
+}
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+    width: 100px !important;
+    text-align: left !important;
+    border-top-right-radius:unset !important;
+    border-bottom-right-radius:unset !important;
+    border-top-left-radius: unset !important;
+    border-bottom-left-radius: unset !important;
+}
+.page-item  {
+    margin: 0px 6px;
+}
+.pagination  button{
+color: black !important;
+}
+.active>.page-link, .page-link.active {
+    background-color: black !important;
+    color: white !important;
+    border-color: black !important;
+}
+.disabled button {
+    color: gray !important;
+}
+.nextBtn::after {
+    content: '\F285';
+    font-family:'Bootstrap-icons';
+    width: 12px;
+    height: 12px;
+    top: 12px;
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    right: 4px;
+}
