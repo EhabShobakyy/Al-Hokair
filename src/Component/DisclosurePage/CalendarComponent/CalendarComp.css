@@ -1,0 +1,13 @@
+.calenar-table {
+    width: 100%;
+    display: table;
+}
+.calenar-table thead th {
+    font-weight: 600;
+}
+.details-calender,
+.calender-title  {
+    font-weight: 600;
+    border-bottom: 1px solid #dee2e6;
+    padding: 4px 0px;
+}

@@ -1,0 +1,18 @@
+.table-salaries {
+    width: 100%;
+}
+.table-salaries thead tr th {
+    font-weight: 600;
+}
+.years-btn {
+    background-color: white;
+    border: unset;
+}
+.active-years {
+    font-weight: bold;
+}
+@media (max-width:769px) {
+    .table-salaries {
+        font-size: 14px;
+    }
+}

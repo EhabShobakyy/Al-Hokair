@@ -1,0 +1,18 @@
+.chart-options {
+    background-color: #0068b3;
+    padding: 10px 0px;
+    margin-top: 15px;
+}
+.chart-options select {
+    padding: 0px 12px;
+    height: 27px;
+    line-height: 27px;
+    border: unset;
+}
+.reset-btn {
+    background-color: white;
+    border: unset;
+    padding: 0px 12px;
+    height: 27px;
+    line-height: 27px;
+}

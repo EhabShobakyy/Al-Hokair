@@ -1,0 +1,49 @@
+.global-heading {
+    color: #707070;
+    font-size: 23px;
+}
+.historical-table table {
+    width: 100%;
+}
+.table-head {
+    color: #707070 !important;
+    font-weight: bold;
+}
+.historical-table table td {
+    padding: 10px 0px;
+    border-bottom: 1px solid #dfdfdf;
+}
+input.inputBox {
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #dfdfdf;
+    padding: 16.5px 14px;
+    
+}
+.calendarWrap {
+    display: inline-block;
+    position: relative;
+}
+.inputBox {
+   width: 200px;
+   padding: 16.5px 14px;
+   background-color: transparent;
+   margin: 15px 0px;
+}
+.inputBox:hover {
+    border-color: black;
+}
+
+.calendarElement {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+    border: 1px solid #ccc;
+    z-index: 999;
+}
+
+.rdrCalendarWrapper {
+    position: absolute;
+    transition: all 5ms;
+}

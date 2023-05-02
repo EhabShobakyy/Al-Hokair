@@ -1,6 +1,6 @@
 import React from "react";
 // Routing
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 // Style
 import "./DisclousreNav.css";
 
@@ -8,19 +8,20 @@ function DisclousreNav() {
   return (
     <>
       <nav className="component-nav container-lg d-flex justify-content-between">
-        <NavLink className="col-3" to="/discloser">
+        <NavLink to="discloser" className="col-3">
           Discloser
         </NavLink>
-        <NavLink className="col-3" to="/news">
+        <NavLink to="news" className="col-3">
           News
         </NavLink>
-        <NavLink className="col-3" to="/calendarEvents">
+        <NavLink to="calendar" className="col-3">
           Calendar Events
         </NavLink>
-        <NavLink className="col-3" to="/analystEstimates">
+        <NavLink to="analystEstimates" className="col-3">
           Analyst Estimates
         </NavLink>
       </nav>
+      <Outlet />
     </>
   );
 }

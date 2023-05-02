@@ -33,7 +33,7 @@ function News() {
   );
   const news = disclosurePage?.latestNews;
 
-  console.log(discloserDetails);
+  console.log("News Component", news);
 
   return (
     <>
@@ -70,41 +70,22 @@ function News() {
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body">
-                    <h6> {discloserDetails[id]?.title}</h6>
+                    <h6> {discloserDetails?.[id]?.title}</h6>
 
                     <div className="d-flex justify-content-between">
                       <p className="col-10">
                         {moment(
-                          discloserDetails[id]?.publishedOn,
+                          discloserDetails?.[id]?.publishedOn,
                           "DD-MM-YYYY"
                         )?.format("DD/MM/YYYY")}
                       </p>
-
-                      <div className="social-icons  d-flex justify-content-between col-2">
-                        <a href="#">
-                          <i className="bi bi-link"></i>
-                        </a>
-                        <a href="#">
-                          <i className="bi bi-twitter"></i>
-                        </a>
-                        <a href="#">
-                          <i className="bi bi-whatsapp"></i>
-                        </a>
-                        <a href="#">
-                          <i className="bi bi-facebook"></i>
-                        </a>
-                        <a href="#">
-                          <i className="bi bi-linkedin"></i>
-                        </a>
-                      </div>
-                      <hr />
                     </div>
                     <img
                       className="disclouser-img"
-                      src={discloserDetails[id]?.iconURL}
+                      src={discloserDetails?.[id]?.iconURL}
                     />
                     <p>
-                      {discloserDetails[id]?.body?.replace(
+                      {discloserDetails?.[id]?.body?.replace(
                         /<[^>]*(>|$)|&nbsp;|&zwnj;|&raquo;|&laquo;|&gt;/g,
                         " "
                       )}

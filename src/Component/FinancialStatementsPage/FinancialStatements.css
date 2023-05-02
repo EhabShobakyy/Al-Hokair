@@ -1,0 +1,118 @@
+
+.sec-title {
+    text-transform: uppercase;
+    margin: 20px 0px;
+    font-size: 25px;
+}
+.financial-ratios-table {
+    width: 100%;
+    text-align: center;
+    font-size: 14px
+}
+.financial-ratios-table tbody tr th {
+    display: flex;
+    align-items: baseline;
+    overflow-x: auto;
+}
+.financial-ratios-table tbody tr th ,
+.financial-ratios-table tbody tr td {
+    padding: 4px;
+} 
+.period-btn,
+.currency-tabs  {
+    border: 1px solid #0068b3;
+    border-radius: 5px;
+    width: 350px;
+}
+
+.pdf-icon {
+    background-color: #0068b3;
+    color: white;
+    padding: 0px 2px;
+    margin: 0px 2px;
+    text-decoration: unset;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.pdf-icon:hover {
+    color: white;
+}
+
+.period-btn button,
+.currency-tabs button {
+    background-color: white;
+    border: unset;
+    width: 100%;
+    padding: 4px;
+}
+button.active,
+button.active-currency {
+    background-color: #0068b3;
+    font-weight: 700;
+    color: white;
+}
+
+.chart-btn {
+    border: unset;
+    background-color: white;
+}
+.chart-img {
+    cursor: pointer !important;
+    width: 18px;
+    height: 18px;
+}
+.close-sign {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-inline-end: 10px;
+    line-height: 0.5px;
+    border-radius: 0px;
+    padding: 14px 0px !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white !important;
+    box-shadow: unset !important;
+}
+
+.accordion-item {
+    border-left: unset !important;
+    border-right: unset !important;
+    border-top: 1px solid gainsboro !important;
+    border-bottom: 1px solid gainsborogray !important;
+}
+
+.accordion-button::after {
+    width: unset !important;
+    height: unset !important;
+    content: '+' !important;
+    font-size: 20px;
+    color: #0068b3 !important;
+}
+.accordion-button:not(.collapsed)::after {
+    transform: unset !important;
+    content: '-' !important;
+}
+
+@media (max-width: 769px) {
+    .financial-ratios-table {
+        width: 800px;
+    }
+    .financial-ratios {
+        overflow-x: scroll;
+    }
+    .financial-tabs {
+        flex-direction: column;
+    }
+    .financial-tabs > div {
+        margin-bottom: 16px;
+    }
+    .period-btn ,
+    .currency-tabs {
+        width: 100%;
+        font-size: 14px;
+    }
+
+}

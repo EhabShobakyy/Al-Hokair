@@ -1,0 +1,19 @@
+.global-person-img {
+    width: 100px;
+    height: 125px;
+}
+.chairman {
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+.board-member {
+    border-bottom: 1px solid gainsboro;
+}
+
+.board-member > div {
+    padding: 16px 0px;
+}
+.personal-name {
+    font-weight: 600;
+    color: #0068b3;
+}

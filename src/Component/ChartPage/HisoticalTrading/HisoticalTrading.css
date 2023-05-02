@@ -1,0 +1,10 @@
+
+
+@media (max-width:991px) {
+    .historical-table {
+    overflow-x: scroll;
+    }
+    .historical-table table {
+        width: 800px;
+    }
+}

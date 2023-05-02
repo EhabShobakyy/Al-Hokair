@@ -1,0 +1,47 @@
+.hitorical-table {
+    padding-bottom: 15px;
+    border-bottom: 1px solid gainsboro;
+}
+.hitorical-table table {
+    width: 100%;
+    font-size: 14px;
+}
+.hitorical-table table thead tr th,
+.hitorical-table table tbody tr td {
+ padding: 4px 0px;
+}
+.icont-test {
+    cursor: pointer;
+    position: relative;
+}
+
+.test {
+    display: none;
+}
+.icont-test:hover > .test {
+    display: block;
+    position: absolute;
+    background-color: linen;
+    width: 200px;
+    left: -205px;
+    top: 0;
+    padding: 4px;
+    font-size: 12px;
+    border: 1px solid;   
+}
+
+.icont-test > i::before {
+    background-color: #0068b3;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width:769px ){
+    
+    .hitorical-table {
+        overflow-x: auto;   
+    }
+    .hitorical-table table {
+        width: 800px;
+    }
+    }

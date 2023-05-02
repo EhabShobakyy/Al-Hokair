@@ -26,16 +26,16 @@ function Disclosure() {
   );
   const disclosureData = disclosure?.discloser;
 
+  console.log("disclosureData", disclosureData);
+
   // Disclouser Details
   const discloserDetails = useToken(
     "https://data.argaam.com/api/v1/json/ir-widget/disclosures-articles-with-body/en"
   );
-  // console.log(discloserDetails);
-  console.log(discloserDetails);
 
   // Function to Display Disclousers Details
   const discloserAccordion = (id) => {
-    console.log(discloserDetails[id]);
+    console.log(discloserDetails?.[id]);
   };
 
   return (
@@ -67,6 +67,7 @@ function Disclosure() {
                   <i className="bi bi-arrow-down-circle"></i>
                 </button>
 
+                {/* Accordion Popup */}
                 <div
                   id={`collapse${id}`}
                   className="accordion-collapse collapse "
@@ -74,12 +75,12 @@ function Disclosure() {
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body">
-                    <h6> {discloserDetails[id]?.title}</h6>
+                    <h6> {discloserDetails?.[id]?.title} </h6>
 
                     <div className="d-flex justify-content-between">
                       <p className="col-10">
                         {moment(
-                          discloserDetails[id]?.publishedOn,
+                          discloserDetails?.[id]?.publishedOn,
                           "DD-MM-YYYY"
                         )?.format("DD/MM/YYYY")}
                       </p>
@@ -87,7 +88,7 @@ function Disclosure() {
 
                     <div
                       dangerouslySetInnerHTML={{
-                        __html: discloserDetails[id]?.body,
+                        __html: discloserDetails?.[id]?.body,
                       }}
                     ></div>
                   </div>

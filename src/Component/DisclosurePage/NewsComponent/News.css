@@ -1,0 +1,6 @@
+.news .accordion-button:not(.collapsed)::after {
+    display: none;
+}
+.news .accordion-button::after {
+    display: none;
+}
